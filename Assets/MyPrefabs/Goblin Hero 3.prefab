@@ -1599,11 +1599,12 @@ GameObject:
   - component: {fileID: 453040}
   - component: {fileID: 9551128}
   - component: {fileID: 20554988}
-  - component: {fileID: -1360677088669898490}
   - component: {fileID: 3971266187874667629}
   - component: {fileID: 4581185676327031589}
   - component: {fileID: -5090684122797004759}
-  m_Layer: 0
+  - component: {fileID: -2520589215284631212}
+  - component: {fileID: -5557974506918329798}
+  m_Layer: 6
   m_Name: Goblin Hero 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,18 +1698,6 @@ LODGroup:
     - renderer: {fileID: 0}
     - renderer: {fileID: 0}
   m_Enabled: 1
---- !u!114 &-1360677088669898490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec866bd49177b843ab0127d4d6af462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &3971266187874667629
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1761,6 +1750,32 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-2520589215284631212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24b5c608cdc594ca6cf7f892dcafbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5557974506918329798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92bd6445968a84e9c19ab76837fc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayersUnit: 0
+  _selectionCircle: {fileID: 0}
 --- !u!1 &157592
 GameObject:
   m_ObjectHideFlags: 0

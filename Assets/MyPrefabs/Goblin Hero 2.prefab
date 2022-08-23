@@ -1954,11 +1954,12 @@ GameObject:
   - component: {fileID: 453040}
   - component: {fileID: 9551128}
   - component: {fileID: 20554988}
-  - component: {fileID: 5630422221814328980}
   - component: {fileID: 1225184962985139987}
   - component: {fileID: 896110208464497398}
   - component: {fileID: 9154582552263782}
-  m_Layer: 0
+  - component: {fileID: -964316388368089593}
+  - component: {fileID: -6412313437925025711}
+  m_Layer: 6
   m_Name: Goblin Hero 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2058,18 +2059,6 @@ LODGroup:
     - renderer: {fileID: 13764388}
     - renderer: {fileID: 13746400}
   m_Enabled: 1
---- !u!114 &5630422221814328980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec866bd49177b843ab0127d4d6af462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &1225184962985139987
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2122,6 +2111,32 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-964316388368089593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24b5c608cdc594ca6cf7f892dcafbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6412313437925025711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92bd6445968a84e9c19ab76837fc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayersUnit: 0
+  _selectionCircle: {fileID: 0}
 --- !u!1 &157592
 GameObject:
   m_ObjectHideFlags: 0

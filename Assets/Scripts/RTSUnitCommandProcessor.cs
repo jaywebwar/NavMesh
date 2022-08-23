@@ -1,53 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(RTSUnit))]
-[RequireComponent(typeof(PlayerInputController))]
 public class RTSUnitCommandProcessor : MonoBehaviour
 {
     Queue<Command> _commands;
+    NavMeshAgent _nma;
     Command _currentCommand;
 
-    PlayerInputController _input;
 
     private void Awake()
     {
-        _input = GetComponent<PlayerInputController>();
+        _commands = new Queue<Command>();
+        _nma = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        ListenForCommands();
         ProcessCommands();
     }
 
-    void ListenForCommands()
+    public void QueueCommand(Command cmd)
     {
-        ListenForNPCCommands();
-        if(GetComponent<IRTSUnit>().IsPlayersUnit)
+        if (cmd.OverWritesQueuedCommands)
         {
-            ListenForPlayerCommands();
+            _commands.Clear();
+
+            if(_currentCommand != null)
+            {
+                _currentCommand.Interrupt();
+            }
+            
         }
-    }
-
-    private void ListenForPlayerCommands()
-    {
-
-    }
-
-    private void ListenForNPCCommands()
-    {
-        //Listen for awareness collider to report an enemy triggering the collider
+            
+        _commands.Enqueue(cmd);
     }
 
     void ProcessCommands()
     {
-        if(_currentCommand != null)
+        if(_currentCommand == null)
         {
-
+            if(_commands.Count != 0)
+            {
+                _currentCommand = _commands.Dequeue();
+                _currentCommand.Execute();
+            }
         }
-
+        else
+        {
+            if(_currentCommand.IsFinished)
+            {
+                if (_commands.Count != 0)
+                {
+                    _currentCommand = _commands.Dequeue();
+                    _currentCommand.Execute();
+                }
+                else
+                {
+                    _currentCommand = null;
+                }
+            }
+        }
     }
 
 }

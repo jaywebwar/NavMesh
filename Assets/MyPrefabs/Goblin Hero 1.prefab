@@ -1866,11 +1866,12 @@ GameObject:
   - component: {fileID: 453040}
   - component: {fileID: 9551128}
   - component: {fileID: 20554988}
-  - component: {fileID: -2838083418725981573}
   - component: {fileID: -1631751745097343964}
   - component: {fileID: -7681558154730165924}
   - component: {fileID: -7781995665502568080}
-  m_Layer: 0
+  - component: {fileID: -1411950337900789430}
+  - component: {fileID: 7296023719367445270}
+  m_Layer: 6
   m_Name: Goblin Hero 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1972,18 +1973,6 @@ LODGroup:
     - renderer: {fileID: 0}
     - renderer: {fileID: 0}
   m_Enabled: 1
---- !u!114 &-2838083418725981573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec866bd49177b843ab0127d4d6af462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &-1631751745097343964
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2036,6 +2025,32 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-1411950337900789430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa24b5c608cdc594ca6cf7f892dcafbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7296023719367445270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd92bd6445968a84e9c19ab76837fc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayersUnit: 0
+  _selectionCircle: {fileID: 0}
 --- !u!1 &157592
 GameObject:
   m_ObjectHideFlags: 0

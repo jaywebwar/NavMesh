@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7233916078825747561}
   - component: {fileID: 3616793015571851936}
   - component: {fileID: 262577502584465081}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1803218663435004093}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 8800621602124236199}
   - component: {fileID: 5663143804699906604}
   - component: {fileID: 5614536970150637575}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7399106118113887061}
   - component: {fileID: 8032392361062710760}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Selection Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,9 +1245,8 @@ GameObject:
   - component: {fileID: 3061823063895574371}
   - component: {fileID: 1922814207}
   - component: {fileID: 5048596164717187514}
-  - component: {fileID: 7889026987142957366}
   - component: {fileID: 1039023398337151296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_Ogre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,19 +1446,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayersUnit: 1
   _selectionCircle: {fileID: 7421650734516692996}
---- !u!114 &7889026987142957366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8872496456876778620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3958b15dd287dc40b9489154e3ec6d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  attackRange: 1.5
+  attackRate: 3
 --- !u!114 &1039023398337151296
 MonoBehaviour:
   m_ObjectHideFlags: 0
